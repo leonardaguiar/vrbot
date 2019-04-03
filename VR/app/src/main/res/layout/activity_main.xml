@@ -25,201 +25,231 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp">
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.90"
             android:id="@+id/imgv_esquerda"
-            android:src="@drawable/img_esquerda"
-            android:alpha="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-
+            android:layout_marginStart="53dp"
             android:layout_marginLeft="53dp"
-            android:layout_marginStart="53dp" />
+            android:layout_weight="0.90"
+
+            android:alpha="0.7"
+            android:src="@drawable/img_esquerda" />
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.90"
             android:id="@+id/imgv_direita"
-            android:src="@drawable/img_direita"
-            android:alpha="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imgv_esquerda"
+            android:layout_toStartOf="@+id/button"
             android:layout_toLeftOf="@+id/button"
-            android:layout_toStartOf="@+id/button" />
+            android:layout_weight="0.90"
+            android:alpha="0.7"
+            android:src="@drawable/img_direita" />
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.90"
             android:id="@+id/imgv_frente"
-            android:alpha="0.7"
-            android:src="@drawable/img_frente"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_weight="0.90"
-            android:src="@drawable/img_tras"
             android:alpha="0.7"
+            android:src="@drawable/img_frente" />
+
+        <ImageView
             android:id="@+id/imgv_tras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.90"
+            android:alpha="0.7"
+            android:src="@drawable/img_tras" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rotate"
             android:id="@+id/button"
-            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/imgv_tras"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:clickable="true"
+            android:text="Rotate" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="--°C"
-            android:textSize="14pt"
             android:id="@+id/text_view_temp"
-            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_view_fire"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/text_view_fire"/>
+            android:layout_alignParentLeft="true"
+            android:text="--°C"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14pt" />
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="--m"
-            android:textSize="14pt"
             android:id="@+id/text_view_dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/img_aim"
+            android:layout_alignStart="@+id/imgv_frente"
             android:layout_alignLeft="@+id/imgv_frente"
-            android:layout_alignStart="@+id/imgv_frente" />
+            android:text="--m"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14pt" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/img_alert"
-            android:src="@drawable/ic_action_alert"
-            android:alpha="0.7"
-            android:layout_alignBottom="@+id/imgv_frente"
-            android:layout_toLeftOf="@+id/text_view_fire"
-            android:layout_toStartOf="@+id/text_view_fire" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="--"
-            android:textSize="14pt"
+            android:layout_alignBottom="@+id/imgv_frente"
+            android:layout_toStartOf="@+id/text_view_fire"
+            android:layout_toLeftOf="@+id/text_view_fire"
+            android:alpha="0.7"
+            android:src="@drawable/ic_action_alert" />
+
+        <TextView
             android:id="@+id/text_view_fire"
-            android:layout_alignBottom="@+id/img_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
             android:layout_alignRight="@+id/button"
-            android:layout_alignEnd="@+id/button" />
+            android:layout_alignBottom="@+id/img_alert"
+            android:text="--"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14pt" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/img_aim"
-            android:src="@drawable/ic_action_aim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imgv_direita"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_action_aim2" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Temperatura"
             android:id="@+id/text_view_desc_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/img_alert"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Umidade"
-            android:id="@+id/text_view_desc_umd"
-            android:layout_below="@+id/text_view_temp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="--%"
-            android:textSize="14pt"
-            android:id="@+id/text_view_umd"
-            android:layout_below="@+id/text_view_desc_umd"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Latitude"
-            android:id="@+id/text_view_desc_lat"
-            android:layout_above="@+id/imgv_tras"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="30dp" />
+            android:layout_alignParentLeft="true"
+            android:text="Temperatura" />
 
         <TextView
+            android:id="@+id/text_view_desc_umd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="--"
-            android:textSize="14pt"
-            android:id="@+id/text_view_lat"
+            android:layout_below="@+id/text_view_temp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="Umidade" />
+
+        <TextView
+            android:id="@+id/text_view_umd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_desc_umd"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="--%"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14pt" />
+
+        <TextView
+            android:id="@+id/text_view_desc_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/imgv_tras"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_marginBottom="30dp"
+            android:text="Latitude" />
 
         <TextView
+            android:id="@+id/text_view_lat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Altura"
+            android:layout_above="@+id/imgv_tras"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="--"
+            android:textSize="14pt" />
+
+        <TextView
             android:id="@+id/text_view_desc_alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_umd"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:text="Altura" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Longitude"
             android:id="@+id/text_view_desc_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_desc_lat"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:text="Longitude" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="--"
-            android:textSize="14pt"
             android:id="@+id/text_view_longi"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="--"
-            android:textSize="14pt"
-            android:id="@+id/text_view_altura"
-            android:layout_below="@+id/text_view_desc_alt"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentBottom="true"
+            android:text="--"
+            android:textSize="14pt" />
+
+        <TextView
+            android:id="@+id/text_view_altura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_desc_alt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="--"
+            android:textSize="14pt" />
+
+        <TextView
+            android:id="@+id/text_view_info"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgv_esquerda"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/imgv_esquerda"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="14pt" />
+
+        <TextView
+            android:id="@+id/text_view_count"
+            android:layout_width="248dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="168dp"
+            android:layout_marginLeft="168dp"
+            android:layout_marginBottom="79dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="14pt" />
 
 
     </RelativeLayout>

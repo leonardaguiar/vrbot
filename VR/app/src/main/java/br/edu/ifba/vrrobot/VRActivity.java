@@ -18,6 +18,7 @@ import android.view.View;
 import java.util.List;
 
 import br.edu.ifba.bd.BD;
+import br.edu.ifba.bd.BDCore;
 import br.edu.ifba.modelos.Configuracao;
 
 /**
@@ -30,6 +31,7 @@ public class VRActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vr_activity);
+
         BD bd = new BD(this);
         List <Configuracao> configuracoes = bd.buscar();
         if(configuracoes.size()==0) {
@@ -37,6 +39,8 @@ public class VRActivity extends Activity {
             configuracao.setEndereco("http://192.168.1.150");
             configuracao.setPorta_dados("5000");
             configuracao.setPorta_video("8080");
+            configuracao.setDelay_req(500);
+            configuracao.setSomente_vr(true);
             bd.inserir(this.configuracao);
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -55,7 +59,7 @@ public class VRActivity extends Activity {
     }
     public void Conectar(View view) throws InterruptedException {
 
-        Intent intent = new Intent(this, SplashEstabilizaActivity.class);
+        Intent intent = new Intent(this, ConexaoActivity.class);
         startActivity(intent);
         //this.finish();
     }
@@ -63,6 +67,12 @@ public class VRActivity extends Activity {
     public void Configuracao(View view){
 
         Intent intent = new Intent(this, ConfiguracaoActivity.class);
+        startActivity(intent);
+    }
+
+    public void Terminal(View view){
+
+        Intent intent = new Intent(this, TerminalComandoActivity.class);
         startActivity(intent);
     }
 

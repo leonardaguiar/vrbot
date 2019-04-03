@@ -3,15 +3,18 @@ package br.edu.ifba.vrrobot;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.assist.AssistStructure;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -41,8 +44,17 @@ public class SplashEstabilizaActivity extends Activity implements SensorEventLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_estabiliza);
+       // this.setRequestedOrientation(ActivityInfo.FLAG_ENABLE_VR_MODE);
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                this.setVrModeEnabled(true,this.getComponentName());
+
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        this.setRequestedOrientation(ActivityInfo.FLAG_ENABLE_VR_MODE);
+
         //Define a exibição da tela como fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -110,9 +122,16 @@ public class SplashEstabilizaActivity extends Activity implements SensorEventLis
         int x1 = x.intValue();
         int y1 = y.intValue();
         int z1 = z.intValue();
+
+        textViewX.setTextColor((Color.parseColor("#000FFF")));
+        textViewX.setText("Pos X: " + x1 + " Estabilizado");
+        textViewY.setTextColor((Color.parseColor("#000FFF")));
+        textViewY.setText("Pos Y: " + y1 + " Estabilizado");
+        textViewZ.setTextColor((Color.parseColor("#000FFF")));
+        textViewZ.setText("Pos Z: " + z1 + " Estabilizado");
         //Controla a TextView para informar se o eixo x esta estabilizado
         //Eixo x etabilizado
-        if(x.intValue()==9){
+      if(x.intValue()==9){
             x1= ((x.intValue()*100)/9)/10;
             textViewX.setTextColor((Color.parseColor("#000FFF")));
             textViewX.setText("Pos X: " + x1 + " Estabilizado");
@@ -160,7 +179,7 @@ public class SplashEstabilizaActivity extends Activity implements SensorEventLis
             textViewZ.setTextColor((Color.parseColor("#00FF00")));
             textViewZ.setText("Pos Z: " + z1 + " Estabilize");
         } else if (z.intValue()<0 && z.intValue()>=-4) {
-            z1= ((z.intValue()*100)/9)/10;
+           // z1= ((z.intValue()*100)/9)/10;
             textViewZ.setTextColor((Color.parseColor("#00FF00")));
             textViewZ.setText("Pos Z: " + z1 + " Estabilize");
         }else if (z.intValue()>4) {

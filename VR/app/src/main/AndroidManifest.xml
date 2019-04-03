@@ -5,17 +5,29 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-feature
+        android:name="android.software.vr.mode"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.vr.high_performance"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-        <activity android:name=".VRActivity">
+        <activity
+            android:name=".VRActivity"
+            android:label="AR-Bot"
+            android:theme="@android:style/Theme.DeviceDefault">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="com.google.intent.category.CARDBOARD" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,13 +37,23 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_vr"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".ConfiguracaoActivity" />
         <activity
-            
+            android:name=".ConfiguracaoActivity"
+            android:label="Configuração"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TerminalComandoActivity"
+            android:label="Comandos"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name=".SplashEstabilizaActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash_estabiliza"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

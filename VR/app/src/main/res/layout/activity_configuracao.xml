@@ -10,22 +10,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.edu.ifba.vrrobot.ConfiguracaoActivity">
 
+    <EditText
+        android:id="@+id/edit_delay"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="-137dp"
+        android:ems="10"
+        android:inputType="number" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Exibir nome"
-        android:textColor="#000000"
         android:id="@+id/textView"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/edit_nome"
+        android:layout_alignEnd="@+id/textView3"
         android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Nome:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Ip do servidor / Endereço"
+        android:text="Ip/Endereço:"
         android:textColor="#000000"
         android:id="@+id/textView2"
         android:layout_above="@+id/edit_endereco"
@@ -36,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Porta dados"
+        android:text="Porta dados:"
         android:textColor="#000000"
         android:id="@+id/textView3"
         android:layout_above="@+id/edit_portadados"
@@ -56,20 +72,27 @@
         android:layout_alignEnd="@+id/edit_endereco" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_salva_config"
+        android:layout_width="369dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_portavideo"
+        android:layout_alignStart="@+id/edit_nome"
+        android:layout_alignLeft="@+id/edit_nome"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="169dp"
+        android:backgroundTint="#000000"
         android:onClick="editarConfiguracao"
         android:text="Salvar"
-        android:id="@+id/btn_salva_config"
-        android:layout_marginTop="71dp"
-        android:layout_below="@+id/edit_portavideo"
-        android:layout_centerHorizontal="true" />
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="10pt" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Porta vídeo"
+        android:text="Porta vídeo:"
         android:textColor="#000000"
         android:id="@+id/textView4"
         android:layout_above="@+id/edit_portavideo"
@@ -99,23 +122,60 @@
         android:layout_alignEnd="@+id/edit_nome" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/edit_nome"
+        android:layout_width="346dp"
+        android:layout_height="43dp"
         android:layout_above="@+id/textView2"
-        android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="-1dp" />
 
-    <RadioButton
+
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ativo"
-        android:textColor="#000000"
-        android:id="@+id/rd_ativo"
-        android:layout_above="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_above="@+id/edit_delay"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="6dp"
+        android:text="Delay requisição:"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_delay"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/edit_delay"
+        android:layout_toRightOf="@+id/edit_delay"
+        android:text="ms"
+        android:textColor="#000000" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_somente_modo_vr"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_delay"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="150dp"
+        android:text="Somente ôculos VR"
+        android:textColor="#000000" />
+
 
 </RelativeLayout>

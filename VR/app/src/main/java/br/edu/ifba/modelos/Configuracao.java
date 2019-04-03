@@ -9,6 +9,24 @@ public class Configuracao {
     private String endereco;
     private String porta_dados;
     private String porta_video;
+    private int delay_req;
+    private boolean somente_vr;
+
+    public int getDelay_req() {
+        return delay_req;
+    }
+
+    public void setDelay_req(int delay_req) {
+        this.delay_req = delay_req;
+    }
+
+    public boolean isSomente_vr() {
+        return somente_vr;
+    }
+
+    public void setSomente_vr(boolean somente_vr) {
+        this.somente_vr = somente_vr;
+    }
 
     public Configuracao() {
     }
