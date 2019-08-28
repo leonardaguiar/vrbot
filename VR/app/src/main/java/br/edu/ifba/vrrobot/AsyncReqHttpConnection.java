@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.view.Gravity;
@@ -39,6 +40,7 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
     private TextView textviewtumd;
     private TextView textviewdist;
     private TextView textviewfire;
+    private TextView textviewdetectmq2;
     private ImageView imgalert;
     private LayoutInflater layoutInflater;
     private boolean online = false;
@@ -64,6 +66,7 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
         this.textviewtumd = (TextView) context.findViewById(R.id.text_view_umd);
         this.textviewfire = (TextView) context.findViewById(R.id.text_view_fire);
         this.textviewdist = (TextView) context.findViewById(R.id.text_view_dist);
+        this.textviewdetectmq2 = (TextView) context.findViewById(R.id.text_view_detect_mq2);
         this.URLRequest = URLRequest;
         this.URLbase = URLbase;
         this.URLbasevideo = URLbasevideo;
@@ -89,7 +92,7 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
                 if (status.status(URLbase).equals("200")) {
                     //Exibe duas vezes uma Toast para o usuario para informar que esta conectado
                     if((alertOnlineHit < 2) && (metodo == 0)) {
-                        //Se em algum momento o alertdialog foi exibido será eleiminado
+                        //Se em algum momento o alertdialog foi exibido será eliminado
                         if(alert){
                             dialogDesconectado.dismiss();
                             dialogDesconectado.cancel();
@@ -97,21 +100,16 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
                         }
                         //incrementada o contador de exibição do Toast
                         alertOnlineHit ++;
-                        //Envia a mesagem para ser exibido o Toast
+                        //Envia a mensagem para ser exibido o Toast
                         publishProgress("online");
                     }
                     online = true;
                     String res = "";
-                    //Solicita do VRrobot os metadados
+                    //Solicita do robo os metadados
                     if (metodo == 0) {
                         WebClientHttpConnection comando = new WebClientHttpConnection();
                         res = comando.get(URLRequest);
                         publishProgress(res);
-
-                    }else if (metodo == 1 ) {
-                        WebClientHttpConnection comando = new WebClientHttpConnection();
-                        res = comando.post(URLRequest,null);
-                    }else if (metodo == 2){
 
                     }
 
@@ -123,14 +121,14 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
                      publishProgress("stream");
 
                 }
-                //Dorme por 1 segundo
+                //Dorme
                 Thread.sleep(this.delay);
             } catch (IOException e) {
                 e.printStackTrace();
                 try {
                     //Envia uma mensagem para ser exibido o AlertDialog com a mensagem que esta desconectado
                     publishProgress("");
-                    //Dorme por 1 segundo
+                    //Dorme
                     Thread.sleep(this.delay);
                 } catch (InterruptedException e1) {
                     e1.printStackTrace();
@@ -194,9 +192,22 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
                     textviewtemp.setText(comandos[2] + "ºC");
                     textviewtumd.setText(comandos[3] + "%U");
                     int alert = Integer.parseInt(comandos[1]);
-                    if (alert > 235)
+                    if (alert > 300) {
                         imgalert.setImageResource(R.drawable.ic_action_alert_red);
-                    else imgalert.setImageResource(R.drawable.ic_action_alert);
+                        textviewdetectmq2.setText("Detectado");
+                        textviewdetectmq2.setTextColor(Color.YELLOW);
+                    } else if (alert > 400)
+                    {
+                        imgalert.setImageResource(R.drawable.ic_action_alert_red);
+                        textviewdetectmq2.setText("Detectado");
+                        textviewdetectmq2.setTextColor(Color.RED);
+                    }
+                    else
+                        {
+                            imgalert.setImageResource(R.drawable.ic_action_alert);
+                            textviewdetectmq2.setText("Normal");
+                            textviewdetectmq2.setTextColor(Color.parseColor("#4169E1"));
+                        }
                 }else
                 {
                     textviewdist.setText(comandos[0]);

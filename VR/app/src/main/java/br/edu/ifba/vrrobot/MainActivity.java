@@ -72,6 +72,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
     private TextView textviewdesclongi;
     private TextView textviewinfo;
     private TextView textviewcout;
+    private TextView textviewdescsaturaox;
+    private TextView textviewdetectmq2;
     private ImageView img_alert;
     private ImageView img_esquerda;
     private ImageView img_direita;
@@ -170,6 +172,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
         textviewfire = (TextView) findViewById(R.id.text_view_fire);
         textviewfire.setTextColor(Color.parseColor("#4169E1"));
         textviewfire.setTypeface(digitalfont);
+        textviewdescsaturaox = (TextView) findViewById(R.id.text_desc_fire);
+        textviewdescsaturaox.setTextColor(Color.parseColor("#4169E1"));
+        textviewdescsaturaox.setTypeface(digitalfont);
+        textviewdetectmq2 = (TextView) findViewById(R.id.text_view_detect_mq2);
+        textviewdetectmq2.setTextColor(Color.parseColor("#4169E1"));
+        textviewdetectmq2.setTypeface(digitalfont);
 
         //Text de exibição dos dados da altitude...#15a0f6
         textviewaltura = (TextView) findViewById(R.id.text_view_altura);
@@ -322,7 +330,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
         if(this.configuracao.isSomente_vr()){
         if (sensorEvent.sensor.getType() == Sensor.TYPE_LIGHT && this.configuracao.isSomente_vr()) {
             Float x = sensorEvent.values[0];
-            if (x > 8) {
+            if (x > 12) {
                 command = "0";
                 textviewinfo.setText(x.toString());
                 this.flag_block = true;
@@ -365,7 +373,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
                     this.time_exit = 0;
                     img_frente.setVisibility(ImageView.VISIBLE);
                     img_tras.setVisibility(ImageView.INVISIBLE);
-                    //Alimenta o json frente
+
                     command = "1";
                     //Esta indo para direita
                     if (y < -2) {
@@ -461,16 +469,14 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
         }
 
         try {
-            //Registra o tempo de execução no momento
-            long tmpNow = System.currentTimeMillis();
+
             //Não permite que o mesmo comando seja executado seguidas vezes
             //Não permite que seja feita alguma requisção até que tenha se passado 5s que tudo foi iniciado
-            //Evita que a tela fique travada por falta de resposta do vrrobot server
+            //AsyncTask Evita que a tela fique travada por falta de resposta do serviço web
             if (!oldcommand.equals(command) && (System.currentTimeMillis() - this.tmpInit) > 5000) {
                 oldcommand = command;
                 asyncmove.Comando(command);
-                /*WebClientHttpConnection comando = new WebClientHttpConnection();
-                comando.post(dataURL + "move/" + command, "");*/
+
             }
         } catch (Exception e) {
             e.printStackTrace();

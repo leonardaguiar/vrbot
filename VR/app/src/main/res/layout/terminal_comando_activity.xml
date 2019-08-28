@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:screenOrientation="landscape"
+    tools:context="br.edu.ifba.vrrobot.TerminalComandoActivity">
+
+
+    <ImageButton
+        android:id="@+id/shutdown"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="43dp"
+        android:background="#ffffff"
+        android:onClick="ShutdownButton"
+        android:src="@drawable/ic_action_shutdown" />
+
+    <ImageButton
+        android:id="@+id/reboot"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_conectar"
+        android:layout_alignStart="@+id/shutdown"
+        android:layout_alignLeft="@+id/shutdown"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:onClick="RebootButton"
+        android:src="@drawable/ic_action_reboot" />
+
+    <TextView
+        android:id="@+id/text_conectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shutdown"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="8dp"
+        android:text="Shutdown"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_configuracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reboot"
+        android:layout_alignStart="@+id/reboot"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="9dp"
+        android:text="Reboot"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="151dp"
+        android:text="Comando:"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="383dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="-146dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reboot"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-138dp"
+        android:layout_marginBottom="32dp"
+        android:background="#000000"
+        android:text="Enviar"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="10pt" />
+
+</RelativeLayout>

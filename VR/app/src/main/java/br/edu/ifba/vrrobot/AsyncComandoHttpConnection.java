@@ -38,11 +38,7 @@ public class AsyncComandoHttpConnection extends AsyncTask<String,String,String> 
                     WebClientHttpConnection comando = new WebClientHttpConnection();
                     comando.post(URLbase + "move/" + command, "");
                     command="";
-                }/*else{
-                    WebClientHttpConnection comando = new WebClientHttpConnection();
-                    comando.post(URLbase + "move/" + "0", "");
-
-                }*/
+                }
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -63,6 +59,9 @@ public class AsyncComandoHttpConnection extends AsyncTask<String,String,String> 
            return;
        }
     }
+
+
+
     public void Exit(boolean exit){
         this.exit = exit;
     }
