@@ -183,23 +183,30 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
         textviewaltura = (TextView) findViewById(R.id.text_view_altura);
         textviewaltura.setTextColor(Color.parseColor("#4169E1"));
         textviewaltura.setTypeface(digitalfont);
+        textviewaltura.setVisibility(View.INVISIBLE);
         textviewdescaltitude = (TextView) findViewById(R.id.text_view_desc_alt);
         textviewdescaltitude.setTextColor(Color.parseColor("#4169E1"));
+        textviewdescaltitude.setVisibility(View.INVISIBLE);
+
 
 
         //Text de exibição dos dados da latitude...#15a0f6
         textviewlatitude = (TextView) findViewById(R.id.text_view_lat);
         textviewlatitude.setTextColor(Color.parseColor("#4169E1"));
         textviewlatitude.setTypeface(digitalfont);
+        textviewlatitude.setVisibility(View.INVISIBLE);
         textviewdesclatitude = (TextView) findViewById(R.id.text_view_desc_lat);
         textviewdesclatitude.setTextColor(Color.parseColor("#4169E1"));
+        textviewdesclatitude.setVisibility(View.INVISIBLE);
 
         //Text de exibição dos dados da latitude...#15a0f6
         textviewlongi = (TextView) findViewById(R.id.text_view_longi);
         textviewlongi.setTextColor(Color.parseColor("#4169E1"));
         textviewlongi.setTypeface(digitalfont);
+        textviewlongi.setVisibility(View.INVISIBLE);
         textviewdesclongi = (TextView) findViewById(R.id.text_view_desc_long);
         textviewdesclongi.setTextColor(Color.parseColor("#4169E1"));
+        textviewdesclongi.setVisibility(View.INVISIBLE);
 
         //Text de exibição de informações adicionais
         textviewinfo = (TextView) findViewById(R.id.text_view_info);
@@ -359,11 +366,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
             Float x = sensorEvent.values[0];
             Float y = sensorEvent.values[1];
             Float z = sensorEvent.values[2];
+
             img_frente.setVisibility(ImageView.INVISIBLE);
             img_tras.setVisibility(ImageView.INVISIBLE);
             img_esquerda.setVisibility(ImageView.INVISIBLE);
             img_direita.setVisibility(ImageView.INVISIBLE);
-
+            command = "0";
             post_comand = new JSONObject();
             if ((y < 5 && y > -4) && x > 0) { // O dispositivo esta de cabeça pra baixo
                 //Esta indo para frente
@@ -410,8 +418,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
                 //Esta indo para direita
                 else if (y < -2) {
                     textviewinfo.setText("");
-                    /*textviewcout.setText("");
-                    this.time_exit = 0;*/
+                    textviewcout.setText("");
+                    this.time_exit = 0;
                     img_esquerda.setVisibility(ImageView.VISIBLE);
                     img_direita.setVisibility(ImageView.INVISIBLE);
                     command = "3";
@@ -473,8 +481,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Sens
             //Não permite que o mesmo comando seja executado seguidas vezes
             //Não permite que seja feita alguma requisção até que tenha se passado 5s que tudo foi iniciado
             //AsyncTask Evita que a tela fique travada por falta de resposta do serviço web
-            if (!oldcommand.equals(command) && (System.currentTimeMillis() - this.tmpInit) > 5000) {
-                oldcommand = command;
+            if ((System.currentTimeMillis() - this.tmpInit) > 5000) {
+                //oldcommand = command;
                 asyncmove.Comando(command);
 
             }

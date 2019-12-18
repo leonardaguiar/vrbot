@@ -24,6 +24,11 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.List;
+
+import br.edu.ifba.bd.BD;
+import br.edu.ifba.modelos.Configuracao;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -38,7 +43,8 @@ public class SplashEstabilizaActivity extends Activity implements SensorEventLis
     private TextView textViewX;
     private TextView textViewY;
     private TextView textViewZ;
-
+    private TextView textViewVrMode;
+    private Configuracao configuracao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,21 +64,38 @@ public class SplashEstabilizaActivity extends Activity implements SensorEventLis
         //Define a exibição da tela como fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        //Carrega dados
+        configuracao = new Configuracao();
         //Define fonte
         Typeface digitalfont = Typeface.createFromAsset(getAssets(),"fonts/DS-DIGIB.TTF");
         //Text de exibição dos dados do acelerometro
         textViewX = (TextView) findViewById(R.id.text_view_x);
         textViewY = (TextView) findViewById(R.id.text_view_y);
         textViewZ = (TextView) findViewById(R.id.text_view_z);
+        textViewVrMode = (TextView) findViewById(R.id.text_view_ativar_vr);
         textViewX.setTextColor((Color.parseColor("#87CEFA")));
         textViewY.setTextColor(Color.parseColor("#87CEFA"));
         textViewZ.setTextColor(Color.parseColor("#87CEFA"));
+        textViewVrMode.setTextColor(Color.parseColor("#4169E1"));
         textViewX.setTypeface(digitalfont);
         textViewY.setTypeface(digitalfont);
         textViewZ.setTypeface(digitalfont);
 
+        BD bd = new BD(this);
+        List<Configuracao> lst_config = bd.buscar();
+        if (lst_config.size() > 0) {
+             this.configuracao.setSomente_vr(lst_config.get(0).isSomente_vr());
 
+        }
 
+        if(configuracao.isSomente_vr())
+        {
+            textViewVrMode.setVisibility(View.VISIBLE);
+        }else
+            {
+                textViewVrMode.setVisibility(View.INVISIBLE);
+            }
 
         //Inicicializa o serviço de sensores
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);

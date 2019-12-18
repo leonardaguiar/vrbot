@@ -29,8 +29,8 @@ public class WebClientHttpConnection {
     private static final int POST = 1;
     private static final int PUT = 2;
     private static final int DELETE = 3;
-    private static  final int STATUS = 4;
-    private String URL ="";
+    private static final int STATUS = 4;
+    private String URL = "";
     private int metodo = -1;
     private String params = null;
 
@@ -39,6 +39,7 @@ public class WebClientHttpConnection {
         this.metodo = metodo;
         this.params = params;
     }
+
     public WebClientHttpConnection() {
 
     }
@@ -58,6 +59,7 @@ public class WebClientHttpConnection {
     public String delete(String url) throws IllegalStateException, IOException {
         return executeHTTPConnection(DELETE, url, null);
     }
+
     public String status(String url) throws IllegalStateException, IOException {
         return executeHTTPConnection(STATUS, url, null);
     }
@@ -100,7 +102,7 @@ public class WebClientHttpConnection {
 
     }
 
-    private String processResponse(HttpEntity entity) throws IllegalStateException,IOException {
+    private String processResponse(HttpEntity entity) throws IllegalStateException, IOException {
         String jsonText = EntityUtils.toString(entity, HTTP.UTF_8);
         return jsonText;
     }

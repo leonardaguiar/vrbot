@@ -62,11 +62,11 @@
     <ImageButton
         android:id="@+id/terminal"
         android:layout_width="118dp"
-        android:layout_height="96dp"
+        android:layout_height="85dp"
         android:layout_alignStart="@+id/conexao"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="18dp"
         android:onClick="Terminal"
         android:src="@drawable/icon_action_terminal" />
 
@@ -75,7 +75,7 @@
         android:layout_width="88dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/text_conectar"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="19dp"
         android:layout_marginBottom="2dp"
         android:layout_toEndOf="@+id/text_configuracao"
         android:text="Conexão"
@@ -98,7 +98,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView6"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="116dp"
+        android:layout_marginEnd="93dp"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:text="Comandos" />
 
@@ -112,5 +113,15 @@
         android:layout_marginTop="0dp"
         android:text="Configuração"
         android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="82dp"
+        android:layout_above="@+id/imageView10"
+        android:layout_alignStart="@+id/terminal"
+        android:layout_marginStart="-56dp"
+        android:layout_marginBottom="-19dp"
+        android:src="@drawable/logo_app_icon" />
 
 </RelativeLayout>

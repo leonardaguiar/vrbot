@@ -56,23 +56,11 @@
       <file leaf-file-name="vr_activity.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vr_activity.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="1955">
-              <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
+            <state relative-caret-position="1666">
+              <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
             <state />
           </provider>
         </entry>
@@ -80,27 +68,20 @@
       <file leaf-file-name="SplashEstabilizaActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/SplashEstabilizaActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="1751">
+              <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_splash_estabiliza.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_estabiliza.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="178" column="68" lean-forward="true" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="68" />
+            <state relative-caret-position="119">
+              <caret line="334" column="58" lean-forward="true" selection-start-line="333" selection-start-column="4" selection-end-line="334" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -108,23 +89,51 @@
       <file leaf-file-name="AsyncComandoHttpConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/AsyncComandoHttpConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            <state relative-caret-position="816">
+              <caret line="59" column="8" selection-start-line="32" selection-start-column="2" selection-end-line="59" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AsyncReqHttpConnection.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+        <entry file="file://E:/Android/sources/android-26/android/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155737">
+              <caret line="9376" column="16" selection-start-line="9376" selection-start-column="16" selection-end-line="9376" selection-end-column="16" />
+              <folding>
+                <element signature="e#376874#376875#0" expanded="true" />
+                <element signature="e#376927#376928#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfiguracaoActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConfiguracaoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1156">
+              <caret line="86" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConexaoActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConexaoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncReqHttpConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/AsyncReqHttpConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="208" column="88" selection-start-line="208" selection-start-column="88" selection-end-line="208" selection-end-column="88" />
-              <folding>
-                <element signature="e#10299#10300#0" expanded="true" />
-                <element signature="e#10331#10332#0" expanded="true" />
-                <element signature="e#10366#10367#0" expanded="true" />
-                <element signature="e#10400#10401#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3604">
+              <caret line="235" selection-start-line="230" selection-end-line="235" />
             </state>
           </provider>
         </entry>
@@ -132,21 +141,18 @@
       <file leaf-file-name="VRActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/VRActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
+            <state relative-caret-position="707">
               <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="285" column="21" lean-forward="true" selection-start-line="285" selection-start-column="21" selection-end-line="285" selection-end-column="21" />
+      <file leaf-file-name="WebClientHttpConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/WebClientHttpConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="102" selection-end-column="5" />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -2302,9 +2308,7 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_toast.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_estabiliza.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_conexao.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/SplashEstabilizaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/modelos/Configuracao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/bd/BDCore.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/bd/BD.java" />
@@ -2323,13 +2327,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/VRActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/TerminalComandoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/terminal_comando_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/WebClientHttpConnection.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/AsyncComandoHttpConnection.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/vr_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_estabiliza.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/vr_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/AsyncReqHttpConnection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/SplashEstabilizaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/WebClientHttpConnection.java" />
       </list>
     </option>
   </component>
@@ -2380,21 +2386,11 @@
               <item name="ifba" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="vrrobot" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="VR" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="VR" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2411,10 +2407,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.recentlyUsedThemes" value="Base.Theme.AppCompat" />
     <property name="android.sdk.path" value="E:/Android" />
     <property name="device.picker.selection" value="d8d6eeeb" />
@@ -2672,7 +2669,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
@@ -2680,8 +2676,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.10665658" side_tool="true" visible="true" weight="0.121783875" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.25945538" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.17152658" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933104" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32933104" />
@@ -2689,22 +2684,23 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23600605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24583964" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.89334345" weight="0.121783875" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32933104" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.32933104" />
       <window_info anchor="right" id="Assistant" order="3" weight="0.11408882" />
       <window_info anchor="right" id="Android Model" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.27685326" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32935154" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Gradle Console" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Android Monitor" order="12" visible="true" weight="0.1996587" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -2763,12 +2759,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConexaoActivity.java</url>
-          <line>122</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/TerminalComandoActivity.java</url>
           <line>97</line>
           <properties />
@@ -2780,13 +2770,17 @@
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConfiguracaoActivity.java</url>
-          <line>81</line>
-          <properties class="br.edu.ifba.vrrobot.ConfiguracaoActivity" method="editarConfiguracao">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="48" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java</url>
+          <line>407</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java</url>
+          <line>412</line>
+          <properties />
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConfiguracaoActivity.java</url>
@@ -2797,7 +2791,7 @@
           <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="77" />
+      <option name="time" value="90" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -2940,13 +2934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConfiguracaoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/26.1.0/2b34456c30d6b6e5db5fa3e8fa02f6cebd5531fd/appcompat-v7-26.1.0-sources.jar!/android/support/v7/app/AppCompatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -3005,27 +2992,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://E:/Android/sources/android-26/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77537">
-          <caret line="4696" selection-start-line="4696" selection-end-line="4696" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Android/sources/android-26/android/os/Looper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2176">
           <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConexaoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="69" column="30" selection-start-line="68" selection-start-column="8" selection-end-line="69" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3049,13 +3019,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/WebClientHttpConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Android/sources/android-26/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -3070,28 +3033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/VRActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/SplashEstabilizaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_estabiliza.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -3102,55 +3043,111 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vr_activity.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" column="17" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="285" column="21" lean-forward="true" selection-start-line="285" selection-start-column="21" selection-end-line="285" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_action_alert_red.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_estabiliza.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="178" column="68" lean-forward="true" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="68" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vr_activity.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConexaoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/ConfiguracaoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="86" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Android/sources/android-26/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155737">
+          <caret line="9376" column="16" selection-start-line="9376" selection-start-column="16" selection-end-line="9376" selection-end-column="16" />
+          <folding>
+            <element signature="e#376874#376875#0" expanded="true" />
+            <element signature="e#376927#376928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/WebClientHttpConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="102" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/AsyncComandoHttpConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        <state relative-caret-position="816">
+          <caret line="59" column="8" selection-start-line="32" selection-start-column="2" selection-end-line="59" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/AsyncReqHttpConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="208" column="88" selection-start-line="208" selection-start-column="88" selection-end-line="208" selection-end-column="88" />
+        <state relative-caret-position="3604">
+          <caret line="235" selection-start-line="230" selection-end-line="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/SplashEstabilizaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
           <folding>
-            <element signature="e#10299#10300#0" expanded="true" />
-            <element signature="e#10331#10332#0" expanded="true" />
-            <element signature="e#10366#10367#0" expanded="true" />
-            <element signature="e#10400#10401#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/VRActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/ifba/vrrobot/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="334" column="58" lean-forward="true" selection-start-line="333" selection-start-column="4" selection-end-line="334" selection-end-column="58" />
         </state>
       </provider>
     </entry>

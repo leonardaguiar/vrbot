@@ -188,18 +188,18 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
                 String comandos[] = res.split(",");
                 if (comandos.length == 4) {
                     textviewdist.setText(comandos[0] + "m");
-                    textviewfire.setText(comandos[1] + "i");
+                    textviewfire.setText(comandos[1] + "ppm");
                     textviewtemp.setText(comandos[2] + "ºC");
                     textviewtumd.setText(comandos[3] + "%U");
                     int alert = Integer.parseInt(comandos[1]);
-                    if (alert > 300) {
+                    if (alert >=350 && alert < 450) {
                         imgalert.setImageResource(R.drawable.ic_action_alert_red);
                         textviewdetectmq2.setText("Detectado");
                         textviewdetectmq2.setTextColor(Color.YELLOW);
-                    } else if (alert > 400)
+                    } else if (alert >=450)
                     {
                         imgalert.setImageResource(R.drawable.ic_action_alert_red);
-                        textviewdetectmq2.setText("Detectado");
+                        textviewdetectmq2.setText("Niveis elevados");
                         textviewdetectmq2.setTextColor(Color.RED);
                     }
                     else
@@ -223,6 +223,7 @@ public class AsyncReqHttpConnection extends AsyncTask<String,String,String> {
                    webview.getSettings().setAppCacheEnabled(true);
                    webview.loadUrl(this.URLvideo);
                    webview.setWebViewClient(new WebViewClient());
+
 
                    streamloaded = true;
                    streamoffline = false;
